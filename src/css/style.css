@@ -1,27 +1,88 @@
 *,
 *::after,
 *::before {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 img {
-  max-width: 100%;
-  display: block;
+	max-width: 100%;
+	display: block;
 }
 
 ul {
-  list-style: none;
-  padding-left: 0;
-  margin-top: 0;
-  margin-bottom: 0;
+	list-style: none;
+	padding-left: 0;
+	margin-top: 0;
+	margin-bottom: 0;
 }
 
 a {
-  text-decoration: none;
-  color: inherit;
+	text-decoration: none;
+	color: inherit;
 }
 
 body {
-  margin: 0;
-  /* background-image: url(../assets/images/sleep-cat.jpeg); */
+	margin: 0;
+	background-color: rgb(252, 235, 235);
+	/* background-image: url(../assets/images/sleep-cat.jpeg); */
+}
+.boardGame {
+	display: flex;
+	justify-content: space-between;
+}
+.numbersBingo {
+	display: grid;
+	grid-template-columns: repeat(11, 40px);
+}
+.cardBingo {
+	display: grid;
+	grid-template-columns: repeat(5, 40px);
+	align-content: start;
+}
+.cell {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 40px;
+	width: 40px;
+	border: solid black;
+	border-width: 1px;
+}
+.orange {
+	background-color: orange;
+}
+.green {
+	background-color: green;
+}
+.red {
+	background-color: rgb(234, 138, 138);
+}
+.results {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	font-family: sans-serif;
+	color: rgb(244, 177, 95);
+}
+.order {
+	margin: 20px;
+}
+
+.hide-result {
+	display: none;
+}
+
+.bingoText {
+	text-align: center;
+	font-size: xx-large;
+	font-family: sans-serif;
+	color: rgb(242, 198, 132);
+}
+
+.button {
+	text-align: center;
+	position: absolute;
+	margin-top: 450px;
+	margin-left: 50%;
+	transform: translateX(-50%);
 }
